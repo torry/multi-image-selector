@@ -58,7 +58,7 @@ public class MultiImageSelectorActivity extends AppCompatActivity
             getWindow().setStatusBarColor(Color.BLACK);
         }
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar) getDelegate().findViewById(R.id.toolbar);
         if(toolbar != null){
             setSupportActionBar(toolbar);
         }
@@ -76,7 +76,7 @@ public class MultiImageSelectorActivity extends AppCompatActivity
             resultList = intent.getStringArrayListExtra(EXTRA_DEFAULT_SELECTED_LIST);
         }
 
-        mSubmitButton = (Button) findViewById(R.id.commit);
+        mSubmitButton = (Button) getDelegate().findViewById(R.id.commit);
         if(mode == MODE_MULTI){
             updateDoneText(resultList);
             mSubmitButton.setVisibility(View.VISIBLE);

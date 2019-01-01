@@ -1,10 +1,12 @@
 # Logs
 *.log
-
+.git
+build/
 # Runtime data 23
 tmp
+Example
 .fontcustom-manifest.json
-
+Example/
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules

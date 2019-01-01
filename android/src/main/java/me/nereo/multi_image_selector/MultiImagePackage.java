@@ -14,10 +14,7 @@ import java.util.List;
  * Created by 90927 on 2016/8/29.
  */
 public class MultiImagePackage implements ReactPackage {
-    @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
-    }
+
 
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
